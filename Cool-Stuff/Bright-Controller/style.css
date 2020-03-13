@@ -30,6 +30,17 @@
   justify-content: space-between;
 }
 
+.minus,
+.plus {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.minus:hover,
+.plus:hover {
+  font-size: 22px;
+}
+
 .brghtness-box i {
   margin: 0 10px;
 }
