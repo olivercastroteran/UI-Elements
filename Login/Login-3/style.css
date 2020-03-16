@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(./background.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 5% 15%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-box h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #4caf50;
+  padding: 3% 0;
+}
+
+.textbox {
+  width: 200px;
+  height: auto;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i {
+  position: absolute;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 0 0 4px 20px;
+  color: #fff;
+  font-size: 16px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  width: 200px;
+  cursor: pointer;
+  margin-top: 25px;
+  background: none;
+  border: 1px solid #4caf50;
+  border-radius: 50px;
+  padding: 5px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #4caf50;
+}
+
+@media (max-width: 1000px) {
+  .login-box {
+    width: 30%;
+    padding: 5% 25%;
+  }
+}
