@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>3D Flipper</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabdemo my-tabs">
+        <ul class="tab-menu menu">
+          <li class="active"><a href="#">HOME</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+        <div class="tab-content content">
+          <div class="tab-content-item">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum
+              qui dolor aperiam vitae modi laboriosam, nulla asperiores libero,
+              dolorem beatae? Quos reprehenderit at corporis dolore quia
+              officiis libero, impedit quidem quam accusamus, ipsam sint.
+              Aspernatur quod ducimus minima eaque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos, maiores. Accusamus aperiam quo esse nulla ipsum
+              voluptates ut reiciendis dolorum.
+            </p>
+            <img src="./img/g.jpg" />
+          </div>
+          <div class="tab-content-item">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum
+              qui dolor aperiam vitae modi laboriosam, nulla asperiores libero,
+              dolorem beatae? Quos reprehenderit at corporis dolore quia
+              officiis libero, impedit quidem quam accusamus, ipsam sint.
+              Aspernatur quod ducimus minima eaque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos, maiores. Accusamus aperiam quo esse nulla ipsum
+              voluptates ut reiciendis dolorum.
+            </p>
+            <img src="./img/h.jpg" />
+          </div>
+          <div class="tab-content-item">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum
+              qui dolor aperiam vitae modi laboriosam, nulla asperiores libero,
+              dolorem beatae? Quos reprehenderit at corporis dolore quia
+              officiis libero, impedit quidem quam accusamus, ipsam sint.
+              Aspernatur quod ducimus minima eaque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos, maiores. Accusamus aperiam quo esse nulla ipsum
+              voluptates ut reiciendis dolorum.
+            </p>
+            <img src="./img/u.jpg" />
+          </div>
+          <div class="tab-content-item">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cum
+              qui dolor aperiam vitae modi laboriosam, nulla asperiores libero,
+              dolorem beatae? Quos reprehenderit at corporis dolore quia
+              officiis libero, impedit quidem quam accusamus, ipsam sint.
+              Aspernatur quod ducimus minima eaque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos, maiores. Accusamus aperiam quo esse nulla ipsum
+              voluptates ut reiciendis dolorum.
+            </p>
+            <img src="./img/y.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script src="./tabtab.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.my-tabs').tabtab({
+          animateHeight: !0,
+          fixedHeight: !1,
+          scale: 1,
+          rotateX: 0,
+          speed: 1500,
+          transformOrigin: 'center left',
+          rotateY: 90,
+          easing: 'easeInOutCubic',
+          translate: 0,
+          tabMenu: '.tab-menu',
+          tabContent: '.tab-content'
+        });
+      });
+    </script>
+  </body>
+</html>
